@@ -57,7 +57,7 @@ for card in test_player.cards:
 class Hand:
     
     def __init__(self):
-        self.cards = []  # start with an empty list as we did in the Deck class
+        self.cards = []  # start with an empty list
         self.value = 0   # start with zero value
         self.aces = 0    # add an attribute to keep track of aces
     
@@ -75,7 +75,7 @@ class Hand:
 class Chips:
     
     def __init__(self):
-        self.total = 100  # This can be set to a default value or supplied by a user input
+        self.total = 100  # setting base value as 100. 
         self.bet = 0
         
     def win_bet(self):
